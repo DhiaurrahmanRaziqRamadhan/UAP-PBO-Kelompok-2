@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #434242;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="uap_pbo.MakananInputController">
+   <children>
+      <VBox alignment="CENTER" layoutX="77.0" layoutY="32.0" spacing="20.0">
+         <children>
+            <VBox spacing="30.0">
+               <children>
+                  <HBox alignment="CENTER">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" nodeOrientation="LEFT_TO_RIGHT" text="Input Makanan" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox spacing="100.0">
+                     <children>
+                        <VBox spacing="30.0">
+                           <children>
+                              <Label text="Id" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Nama Barang" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Harga" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Jumlah" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Diskon" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Daya Tahan" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox spacing="20.0">
+                           <children>
+                              <TextField fx:id="LBid" prefHeight="25.0" prefWidth="275.0" promptText="ID Makanan" style="-fx-background-color: #5c5b5b;" />
+                              <TextField fx:id="LBnama" prefHeight="25.0" prefWidth="275.0" promptText="Nama Barang" style="-fx-background-color: #5c5b5b;" />
+                              <TextField fx:id="LBharga" prefHeight="25.0" prefWidth="275.0" promptText="Harga" style="-fx-background-color: #5c5b5b;" />
+                              <TextField fx:id="LBjumlah" prefHeight="25.0" prefWidth="275.0" promptText="Jumlah" style="-fx-background-color: #5c5b5b;" />
+                              <TextField fx:id="LBdiskon" prefHeight="25.0" prefWidth="275.0" promptText="Diskon" style="-fx-background-color: #5c5b5b;" />
+                              <TextField fx:id="LBdayatahan" prefHeight="25.0" prefWidth="275.0" promptText="Daya Tahan" style="-fx-background-color: #5c5b5b;" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" spacing="50.0">
+                     <children>
+                        <Button fx:id="btnKembali" mnemonicParsing="false" onAction="#kembali" style="-fx-background-color: #22A39F;" text="Kembali" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="btnTambah" mnemonicParsing="false" onAction="#tambah" style="-fx-background-color: #22A39F;" text="Tambah" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
